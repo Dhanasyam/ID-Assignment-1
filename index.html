@@ -13,7 +13,7 @@
     <body>
         <section id="Page">
             <nav>
-            <a href="index.html" class = "logo">S</a>   
+            <a href="index.html" class = "logo">DS</a>   
             <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Page_2.html">Education</a></li>
@@ -21,6 +21,21 @@
             <li><a href="Page_4.html">Contact</a></li>
             </ul>
             </nav>
+            <img src="images/contactme.png" alt="Contact me" id = "contactButton">
+            <script>
+                var contactButton = document.getElementById("contactButton");
+                var nav = document.getElementById("nav");
+        
+                nav.style.right = "-250px"
+                contactButton.onclick = function(){
+                    if(nav.style.right == "-250px"){
+                        nav.style.right = "0";
+                    }
+                    else{
+                        nav.style.right = "-250px";
+                    }
+                }
+            </script>
 
             <div class = "Home">
             <h6>Hello, </h6>
@@ -55,6 +70,8 @@
             - Wanda Hope Carter</h4>
             </div>
         </section>
+
+        
     
     </body>
 </html>
